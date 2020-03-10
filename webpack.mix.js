@@ -14,12 +14,12 @@ const mix = require("laravel-mix");
 mix
 	.react("resources/js/app.js", "public/js")
 	.sass("resources/sass/app.scss", "public/css")
-	.webpackConfig({
-		output: {
-			chunkFilename: "js/[name].js?id=[chunkhash]"
-		}
-	})
+	// .webpackConfig({
+	// 	output: {
+	// 		chunkFilename: "js/[name].js?id=[chunkhash]"
+	// 	}
+	// })
 	// .browserSync({ proxy: 'http://localhost:8080/' })
-	.version()
-	.sourceMaps(false, "source-map")
+	// .version()
+	// .sourceMaps(false, "source-map")
 	.disableSuccessNotifications();
