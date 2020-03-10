@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'DataController@home');
+Route::get('/about', 'DataController@about');

@@ -16,6 +16,12 @@
 	<script src="http://localhost:3000/static/js/main.chunk.js" defer></script>
 	<script src="http://localhost:3000/static/js/0.chunk.js" defer></script>
 	<script src="http://localhost:3000/static/js/1.chunk.js" defer></script>
+	<script src="http://localhost:3000/static/js/2.chunk.js" defer></script>
+	<script src="http://localhost:3000/static/js/3.chunk.js" defer></script>
+	<!-- <script src="http://localhost:3000/static/js/4.chunk.js" defer></script>
+	<script src="http://localhost:3000/static/js/5.chunk.js" defer></script>
+	<script src="http://localhost:3000/static/js/6.chunk.js" defer></script>
+	<script src="http://localhost:3000/static/js/7.chunk.js" defer></script> -->
 </body>
 
 </html>

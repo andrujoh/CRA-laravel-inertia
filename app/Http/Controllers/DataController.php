@@ -13,4 +13,11 @@ class DataController extends Controller
 			'message' => 'You are home'
 		]);
 	}
+
+	public function about()
+	{
+		return Inertia::render('About', [
+			'message' => 'This is a message from the controller'
+		]);
+	}
 }
