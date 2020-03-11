@@ -15,22 +15,13 @@ import "./index.css";
 
 document.addEventListener("DOMContentLoaded", event => {
 	const app = document.getElementById("app");
-	const fallback = document.getElementById("root");
-	if (window.location.origin.includes("localhost:")) {
-		ReactDOM.render(
-			<h1 style={{ padding: "10px", margin: "30px" }}>
-				Open your laravel app url instead. This localhost only hosts and
-				refreshes the javascript files
-			</h1>,
-			fallback
-		);
-	} else {
+	if (app) {
 		ReactDOM.render(
 			<InertiaApp
 				initialPage={JSON.parse(app.dataset.page)}
-				resolveComponent={name => {
-					return import(`./Pages/${name}`).then(module => module.default);
-				}}
+				resolveComponent={name =>
+					import(`./Pages/${name}`).then(module => module.default)
+				}
 			/>,
 			app
 		);

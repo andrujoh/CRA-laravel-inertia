@@ -7,7 +7,9 @@ const About = props => {
 			<header className="App-header">
 				<h1>About</h1>
 				<p>{props.message}</p>
-				<InertiaLink href="/home">To the home page</InertiaLink>
+				<InertiaLink style={{ color: "white" }} href="/home">
+					To the home page
+				</InertiaLink>
 			</header>
 		</div>
 	);
