@@ -15,7 +15,7 @@ import "./index.css";
 
 document.addEventListener("DOMContentLoaded", event => {
 	const app = document.getElementById("app");
-	if (app) {
+	if (app?.dataset?.page) {
 		ReactDOM.render(
 			<InertiaApp
 				initialPage={JSON.parse(app.dataset.page)}
